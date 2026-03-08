@@ -109,6 +109,20 @@ Configured four Conditional Access policies in Report-only mode to simulate real
 
 <img width="1411" height="938" alt="Multi-factor authentication required for high-risk logins." src="https://github.com/user-attachments/assets/6ae16765-c089-4e90-892e-e203e46d49ce" />
 
+---
+
+## Testing & Validation
+
+<img width="857" height="940" alt="Report only results" src="https://github.com/user-attachments/assets/2be2bdd9-6014-4e17-8df5-05044a5d9f87" />
+
+The sign-in log above shows all four Conditional Access policies evaluated against a freshly created user with Intune Administrator permissions.
+
+- **MFA for Admins** — triggered as expected, the account held an admin role so MFA would have been required
+- **Legacy Authentication Prevention** — not applicable, the user signed in via a modern browser which is the correct and expected behaviour
+- **Require MFA for high-risk logins** — not applicable, the sign-in was not flagged as high risk by Entra ID Protection
+- **Device must be in Australia** — not applicable, named location condition was not met for this sign-in
+
+All policies behaved as intended. Report-only mode confirmed the logic without enforcing controls or disrupting the user.
 
 ---
 
