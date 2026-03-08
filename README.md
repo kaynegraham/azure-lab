@@ -69,8 +69,7 @@ This lab was built to develop practical experience with:
 - Practiced user offboarding — disabling accounts, removing group memberships
 - Practiced mid-lifecycle changes — department transfers, role changes, license updates
 
- <img width="1710" height="990" alt="Changing expired password" src="https://github.com/user-attachments/assets/9ca36b4b-7cd7-4409-85cc-eea2247a0db1" />
-
+ <img width="1710" height="975" alt="Changing expired password" src="https://github.com/user-attachments/assets/440d5e59-1d7c-4249-bc8b-4aed3169a381" />
 
 ### 5. Conditional Access Policies
 
